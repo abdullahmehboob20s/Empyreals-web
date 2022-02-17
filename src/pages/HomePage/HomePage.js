@@ -16,13 +16,13 @@ function HomePage() {
       <div className="mb-100px">
         <Hero />
       </div>
-      {/* <div className="mb-100px">
+      <div className="mb-100px">
         <Collection />
-      </div> */}
+      </div>
       <div className="mb-100px">
         <Story />
       </div>
-      {/* <div className="mb-100px">
+      <div className="mb-100px">
         <Roadmap />
       </div>
       <div className="mb-100px">
@@ -33,7 +33,7 @@ function HomePage() {
           <JoinCommunity />
         </div>
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -27,4 +27,8 @@
   .right {
     max-width: 400px;
   }
+
+  .left {
+    margin-right: 0rem;
+  }
 }

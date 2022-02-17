@@ -7,20 +7,27 @@ import Title from "components/Title/Title";
 
 function Story() {
   const isBellow760px = useMediaQuery("(max-width : 760px)");
+  const isBellow400px = useMediaQuery("(max-width : 400px)");
 
   return (
     <div>
       <div className="container-wrapper">
         <div className={styles.section}>
           <div className={styles.left}>
-            <div className="mb-35px">
+            <div className={`${isBellow760px ? "mb-20px" : "mb-35px"} `}>
               <Title title="Origin Story" />
             </div>
 
             <p
               className={`${
-                isBellow760px ? "fs-16px" : "fs-22px"
-              } weight-4 white lh-1_5 mb-45px`}
+                isBellow760px
+                  ? isBellow400px
+                    ? "fs-14px"
+                    : "fs-16px"
+                  : "fs-22px"
+              } weight-4 white lh-1_5 ${
+                isBellow760px ? "mb-25px" : "mb-45px"
+              } `}
             >
               {" "}
               Nestled deep in the Metaverse was the world <br /> <br /> of
