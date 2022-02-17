@@ -1,0 +1,21 @@
+.cards {
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  margin-right: 4rem;
+}
+
+.right {
+  flex: 0.5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > :not(:last-child) {
+  margin-bottom: 4rem;
+}

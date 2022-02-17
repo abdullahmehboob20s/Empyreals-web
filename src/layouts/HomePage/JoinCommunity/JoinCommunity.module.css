@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  flex: 1;
+  max-width: 682px;
+}
+.right {
+  flex: 0.35;
+}
+
+.right img {
+  width: 100%;
+  border-radius: 20px;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+}
+
+.socialLinks > :not(:last-child) {
+  margin-right: 40px;
+}

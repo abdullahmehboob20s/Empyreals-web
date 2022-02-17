@@ -1,0 +1,81 @@
+.card {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.left {
+  margin-right: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+.lineWrapper {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:is(:last-child) .lineWrapper {
+  display: none;
+}
+
+.line {
+  flex: 1;
+  border: 1px dashed #ffffff;
+}
+
+.lineCircle {
+  border: 1px solid #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+/*  */
+/*  */
+/*  */
+
+.circular_progress {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.value_container {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04021c;
+  z-index: 12;
+}
+
+.progresssss {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: red; */
+  z-index: 10;
+}
