@@ -3,7 +3,7 @@
   border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 25px;
-  padding: 34px 0;
+  padding: 34px 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,4 +29,21 @@
 
 .socialLinks > :not(:last-child) {
   margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .card img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card > :not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

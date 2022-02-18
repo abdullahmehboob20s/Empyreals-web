@@ -10,19 +10,21 @@ import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
 import useMediaQuery from "hooks/useMediaQuery ";
 import Title from "components/Title/Title";
+import { Fade } from "react-awesome-reveal";
 SwiperCore.use([Navigation, EffectCoverflow]);
 
 function Collection() {
   let navigationPrevRef = React.useRef(null);
   let navigationNextRef = React.useRef(null);
-  const isBellow760px = useMediaQuery("(max-width : 760px)");
   const isBellow500px = useMediaQuery("(max-width : 500px)");
 
   return (
     <div>
       <div className="container-wrapper">
         <div className="mb-50px">
-          <Title title="Collection" className="text-center" />
+          <Fade direction="up" delay={300}>
+            <Title title="Collection" className="text-center" />
+          </Fade>
         </div>
       </div>
 
@@ -73,13 +75,19 @@ function Collection() {
         }}
       >
         <SwiperSlide>
-          <img src={collection1} className="w-full" alt="" />
+          <Fade delay={500}>
+            <img src={collection1} className="w-full" alt="" />
+          </Fade>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={collection2} className="w-full" alt="" />
+          <Fade delay={500}>
+            <img src={collection2} className="w-full" alt="" />
+          </Fade>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={collection3} className="w-full" alt="" />
+          <Fade delay={500}>
+            <img src={collection3} className="w-full" alt="" />
+          </Fade>
         </SwiperSlide>
       </Swiper>
     </div>

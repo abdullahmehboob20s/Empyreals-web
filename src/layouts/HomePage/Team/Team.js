@@ -11,14 +11,18 @@ import teamMember6 from "assets/images/teamMember6.png";
 import teamMember7 from "assets/images/teamMember7.png";
 import teamMember8 from "assets/images/teamMember8.png";
 import { BsTwitter } from "react-icons/bs";
+import Title from "components/Title/Title";
+import { Fade } from "react-awesome-reveal";
 
 function Team() {
   return (
     <div>
       <div className="container-wrapper">
-        <h1 className="text-yellow-gradient text-center fs-56px weight-7 mb-45px">
-          Our Team
-        </h1>
+        <div className="mb-45px">
+          <Fade direction="up" triggerOnce={true} delay={500}>
+            <Title title="Our Team" className="text-center" />
+          </Fade>
+        </div>
 
         <div className={styles.cards}>
           <TeamMemberCard

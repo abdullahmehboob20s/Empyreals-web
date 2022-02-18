@@ -19,3 +19,39 @@
 .content > :not(:last-child) {
   margin-bottom: 4rem;
 }
+
+@media (max-width: 1200px) {
+  .cards {
+    flex-direction: column;
+  }
+  .left {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .right {
+    width: 100%;
+    flex: 1;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content > :not(:last-child) {
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .content {
+    display: none;
+  }
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 0rem;
+  }
+}

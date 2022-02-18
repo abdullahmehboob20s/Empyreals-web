@@ -3,14 +3,18 @@ import React from "react";
 import styles from "./Roadmap.module.css";
 import roadmap_img_1 from "assets/images/roadmap_img_1.png";
 import roadmap_img_2 from "assets/images/roadmap_img_2.png";
+import Title from "components/Title/Title";
+import { Fade } from "react-awesome-reveal";
 
 function Roadmap() {
   return (
     <div>
       <div className="container-wrapper">
-        <h1 className="text-yellow-gradient fs-56px weight-7 text-center mb-60px">
-          EMPYREALS NFT ROADMAP
-        </h1>
+        <div className="mb-60px">
+          <Fade direction="down" triggerOnce={true}>
+            <Title title="EMPYREALS NFT ROADMAP" className="text-center" />
+          </Fade>
+        </div>
 
         <div className={styles.cards}>
           <div className={styles.left}>

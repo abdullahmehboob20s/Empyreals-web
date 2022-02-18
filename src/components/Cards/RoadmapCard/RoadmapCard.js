@@ -1,4 +1,6 @@
+import useMediaQuery from "hooks/useMediaQuery ";
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import styles from "./RoadmapCard.module.css";
 
 function RoadmapCard({ title, points, percentage }) {
@@ -7,6 +9,9 @@ function RoadmapCard({ title, points, percentage }) {
   let [progressValue, setProgressValue] = useState(0);
   let [progressEndValue, setProgressEndValue] = useState(percentage);
   let [speed, setSpeed] = useState(30);
+
+  const isBellow1000px = useMediaQuery("(max-width : 1000px)");
+  const isBellow500px = useMediaQuery("(max-width : 500px)");
 
   useEffect(() => {
     if (percentage) {
@@ -30,7 +35,9 @@ function RoadmapCard({ title, points, percentage }) {
         <div className={styles.circular_progress}>
           <div className={styles.progresssss} ref={progressBar}></div>
           <div
-            className={`${styles.value_container} fs-32px weight-5 white`}
+            className={`${styles.value_container} ${
+              isBellow1000px ? "fs-20px" : "fs-32px"
+            } weight-5 white`}
             ref={valueContainer}
           >
             0%
@@ -44,14 +51,21 @@ function RoadmapCard({ title, points, percentage }) {
         </div>
       </div>
       <div className={styles.right}>
-        <h1 className="fs-36px white weight-5 mb-15px">{title}</h1>
-        <ul style={{ paddingLeft: "1.6rem" }}>
-          {points.map((data, index) => (
-            <li className="fs-16px weight-4 white mb-5px lh-1_4" key={index}>
-              {data.point}
-            </li>
-          ))}
-        </ul>
+        <Fade direction="down" cascade={true} duration={500} triggerOnce={true}>
+          <h1 className={`fs-36px white weight-5 mb-15px`}>{title}</h1>
+          <ul style={{ paddingLeft: "1.6rem" }}>
+            {points.map((data, index) => (
+              <li
+                className={`${
+                  isBellow500px ? "fs-12px" : "fs-16px"
+                }  weight-4 white mb-5px lh-1_4`}
+                key={index}
+              >
+                {data.point}
+              </li>
+            ))}
+          </ul>
+        </Fade>
       </div>
     </div>
   );

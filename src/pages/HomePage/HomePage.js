@@ -9,6 +9,8 @@ import Navbar from "layouts/Navbar/Navbar";
 import React from "react";
 import styles from "./HomePage.module.css";
 
+import { Fade } from "react-awesome-reveal";
+
 function HomePage() {
   return (
     <div>
@@ -16,6 +18,7 @@ function HomePage() {
       <div className="mb-100px">
         <Hero />
       </div>
+      <div></div>
       <div className="mb-100px">
         <Collection />
       </div>

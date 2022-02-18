@@ -25,6 +25,9 @@
 .card:is(:last-child) .lineWrapper {
   display: none;
 }
+.card:is(:last-child) .right {
+  padding-bottom: 0;
+}
 
 .line {
   flex: 1;
@@ -78,4 +81,58 @@
   transform: translate(-50%, -50%);
   /* background-color: red; */
   z-index: 10;
+}
+
+@media (max-width: 1000px) {
+  .left {
+    margin-right: 30px;
+  }
+
+  .circular_progress {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media (max-width: 600px) {
+  .left {
+    margin-right: 26px;
+  }
+
+  .circular_progress {
+    height: 70px;
+    width: 70px;
+  }
+
+  .value_container {
+    font-size: 14px !important;
+  }
+
+  .right {
+    padding-bottom: 40px;
+    padding-top: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .left {
+    margin-right: 18px;
+  }
+
+  .circular_progress {
+    height: 55px;
+    width: 55px;
+  }
+
+  .value_container {
+    font-size: 12px !important;
+  }
+
+  .right {
+    padding-bottom: 20px;
+    padding-top: 4%;
+  }
+
+  .progresssss {
+    width: 129%;
+    height: 129%;
+  }
 }
