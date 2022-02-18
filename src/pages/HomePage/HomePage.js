@@ -16,9 +16,9 @@ function HomePage() {
         <Hero />
       </div>
       <div></div>
-      <div className="mb-100px">
+      {/* <div className="mb-100px">
         <Collection />
-      </div>
+      </div> */}
       <div className="mb-100px">
         <Story />
       </div>

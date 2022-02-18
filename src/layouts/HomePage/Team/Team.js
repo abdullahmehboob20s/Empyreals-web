@@ -27,33 +27,46 @@ function Team() {
         <div className={styles.cards}>
           <TeamMemberCard
             img={teamMember1}
-            name="Zavix"
-            designation="Founder"
+            name="Kamlu"
+            designation="Moderator"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember2}
-            name="Alyra"
-            designation="Founder"
+            name="Venom"
+            designation="Moderator"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember3}
-            name="Rely"
+            name="Adonis"
+            designation="Moderator"
+          />
+          <TeamMemberCard
+            img={teamMember4}
+            name="RYU"
             designation="Community Manager"
           />
-          <TeamMemberCard img={teamMember4} name="RYU" designation="SMM" />
           <TeamMemberCard
             img={teamMember5}
-            name="Sped"
-            designation="Discord Moderator"
+            name="Insane"
+            designation="Moderator"
           />
-          <TeamMemberCard
+          {/* <TeamMemberCard
             img={teamMember6}
             name="Kenko"
             designation="Discord Moderator"
+          /> */}
+          <TeamMemberCard
+            img={teamMember7}
+            name="Matsev"
+            designation="Blockchain Dev"
           />
-          <TeamMemberCard img={teamMember7} name="Scala" designation="Dev" />
+          <TeamMemberCard
+            img={teamMember6}
+            name="Website dev"
+            designation="Raja ziafat"
+          />
           <TeamMemberCard img={teamMember8} name="Kyfat" designation="Artist" />
         </div>
       </div>

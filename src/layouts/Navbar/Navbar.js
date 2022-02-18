@@ -8,6 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import useMediaQuery from "hooks/useMediaQuery ";
 import { HiOutlineLink } from "react-icons/hi";
 import { Fade } from "react-awesome-reveal";
+import { FaBabyCarriage } from "react-icons/fa";
 
 function Navbar() {
   const isBellow1000px = useMediaQuery("(max-width : 1000px)");
@@ -48,13 +49,25 @@ function Navbar() {
               triggerOnce={true}
               cascade={true}
             >
-              <a href="/" target="_blank">
+              <a
+                href="https://discord.gg/myKgHJ84QJ"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <BsDiscord size={isBellow1000px ? 24 : 40} />
               </a>
-              <a href="/" target="_blank">
+              <a
+                href="https://twitter.com/EmpyrealsNFT"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <BsTwitter size={isBellow1000px ? 24 : 41} />
               </a>
-              <a href="/" target="_blank">
+              <a
+                href="https://www.instagram.com/empyrealsnft/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <AiFillInstagram size={isBellow1000px ? 24 : 43} />
               </a>
 
@@ -62,10 +75,14 @@ function Navbar() {
                 className={`${
                   styles.connectBtn
                 } yellow-btn white uppercase weight-7 ${
-                  isBellow1000px ? "fs-14px" : "fs-16px"
+                  isBellow1000px
+                    ? isBellow700px
+                      ? "fs-10px"
+                      : "fs-12px"
+                    : "fs-16px"
                 } pointer`}
               >
-                {isBellow700px ? <HiOutlineLink size={20} /> : "Connect Wallet"}
+                {isBellow700px ? <FaBabyCarriage size={20} /> : "Mint Now"}
               </button>
             </Fade>
           </div>
