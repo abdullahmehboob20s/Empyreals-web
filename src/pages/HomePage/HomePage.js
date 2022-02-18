@@ -7,9 +7,6 @@ import Story from "layouts/HomePage/Story/Story";
 import Team from "layouts/HomePage/Team/Team";
 import Navbar from "layouts/Navbar/Navbar";
 import React from "react";
-import styles from "./HomePage.module.css";
-
-import { Fade } from "react-awesome-reveal";
 
 function HomePage() {
   return (

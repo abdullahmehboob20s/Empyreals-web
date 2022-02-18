@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "./Collection.module.css";
-
 import collection1 from "assets/images/collection1.png";
 import collection2 from "assets/images/collection2.png";
 import collection3 from "assets/images/collection3.png";
