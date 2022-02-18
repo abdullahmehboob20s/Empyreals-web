@@ -11,10 +11,10 @@
   width: fit-content;
 }
 
-.logo > img:nth-child(1) {
+.logo1 {
   width: 82px;
 }
-.logo > img:nth-child(2) {
+.logo2 {
   width: 317px;
 }
 
@@ -32,13 +32,13 @@
 }
 
 @media (max-width: 1000px) {
-  .logo > img:nth-child(1) {
+  .logo1 {
     width: 6vw;
   }
-  .logo > img:nth-child(2) {
+  .logo2 {
     width: 30vw;
   }
-  .logo > :not(:last-child) {
+  .logo1 {
     margin-right: 5px;
   }
 
@@ -62,10 +62,10 @@
   }
 }
 @media (max-width: 500px) {
-  .logo > img:nth-child(1) {
+  .logo1 {
     width: 32px;
   }
-  .logo > img:nth-child(2) {
+  .logo2 {
     width: 150px;
   }
 
@@ -79,10 +79,10 @@
   }
 }
 @media (max-width: 380px) {
-  .logo > img:nth-child(1) {
+  .logo1 {
     width: 30px;
   }
-  .logo > img:nth-child(2) {
+  .logo2 {
     width: 130px;
   }
 

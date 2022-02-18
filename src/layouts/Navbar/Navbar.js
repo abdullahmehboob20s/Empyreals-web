@@ -27,8 +27,16 @@ function Navbar() {
                 cascade={true}
                 className="blend-mode-screen"
               >
-                <img src={logo1} className="blend-mode-screen" alt="" />
-                <img src={logo2} className="blend-mode-screen" alt="" />
+                <img
+                  src={logo1}
+                  className={`${styles.logo1} blend-mode-screen`}
+                  alt=""
+                />
+                <img
+                  src={logo2}
+                  className={`${styles.logo2} blend-mode-screen`}
+                  alt=""
+                />
               </Fade>
             </Link>
           </div>
