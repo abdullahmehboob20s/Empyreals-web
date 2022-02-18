@@ -26,7 +26,7 @@ function Collection() {
         </div>
       </div>
 
-      <Fade direction="up" delay={300}>
+      <Fade direction="up" triggerOnce={true} delay={300}>
         <Swiper
           slidesPerView={3}
           spaceBetween={60}
