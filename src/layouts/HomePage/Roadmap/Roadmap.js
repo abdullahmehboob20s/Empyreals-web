@@ -5,6 +5,7 @@ import roadmap_img_1 from "assets/images/roadmap_img_1.png";
 import roadmap_img_2 from "assets/images/roadmap_img_2.png";
 import Title from "components/Title/Title";
 import { Fade } from "react-awesome-reveal";
+import GIF from "assets/images/GIF.gif";
 
 function Roadmap() {
   return (
@@ -141,8 +142,8 @@ function Roadmap() {
           </div>
           <div className={styles.right}>
             <div className={styles.content}>
-              <img src={roadmap_img_1} className="w-full" alt="" />
-              <img src={roadmap_img_2} className="w-full" alt="" />
+              <img src={GIF} className="w-full" alt="" />
+              <img src={GIF} className="w-full" alt="" />
             </div>
           </div>
         </div>

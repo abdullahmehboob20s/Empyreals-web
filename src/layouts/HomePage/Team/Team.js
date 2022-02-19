@@ -27,20 +27,20 @@ function Team() {
         <div className={styles.cards}>
           <TeamMemberCard
             img={teamMember1}
-            name="Kamlu"
-            designation="Moderator"
+            name="Zavix        "
+            designation="Founder"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember2}
-            name="Venom"
-            designation="Moderator"
+            name="Lockhart "
+            designation="Artist"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember3}
-            name="Adonis"
-            designation="Moderator"
+            name="Alyra        "
+            designation="Founder  "
           />
           <TeamMemberCard
             img={teamMember4}
@@ -49,8 +49,8 @@ function Team() {
           />
           <TeamMemberCard
             img={teamMember5}
-            name="Insane"
-            designation="Moderator"
+            name="Kamlu     "
+            designation="SMM"
           />
           {/* <TeamMemberCard
             img={teamMember6}
@@ -59,15 +59,24 @@ function Team() {
           /> */}
           <TeamMemberCard
             img={teamMember7}
-            name="Matsev"
-            designation="Blockchain Dev"
+            name="Adonis"
+            designation="Moderator"
+          />
+          <TeamMemberCard
+            img={teamMember6}
+            name="Insane"
+            designation="Collab Manager"
+          />
+          <TeamMemberCard
+            img={teamMember6}
+            name="Blockchain dev"
+            designation="Matsev"
           />
           <TeamMemberCard
             img={teamMember6}
             name="Website dev"
             designation="Raja ziafat"
           />
-          <TeamMemberCard img={teamMember8} name="Kyfat" designation="Artist" />
         </div>
       </div>
     </div>

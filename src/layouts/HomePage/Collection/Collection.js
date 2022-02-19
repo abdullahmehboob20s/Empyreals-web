@@ -1,7 +1,4 @@
 import React from "react";
-import collection1 from "assets/images/collection1.png";
-import collection2 from "assets/images/collection2.png";
-import collection3 from "assets/images/collection3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -9,6 +6,14 @@ import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
 import useMediaQuery from "hooks/useMediaQuery ";
 import Title from "components/Title/Title";
 import { Fade } from "react-awesome-reveal";
+
+import collectionPerson1 from "assets/images/collection/1.jpg";
+import collectionPerson2 from "assets/images/collection/2.jpg";
+import collectionPerson3 from "assets/images/collection/3.jpg";
+import collectionPerson4 from "assets/images/collection/4.jpg";
+import collectionPerson5 from "assets/images/collection/5.jpg";
+import collectionPerson6 from "assets/images/collection/6.jpg";
+import collectionPerson7 from "assets/images/collection/7.jpg";
 SwiperCore.use([Navigation, EffectCoverflow]);
 
 function Collection() {
@@ -74,13 +79,25 @@ function Collection() {
           }}
         >
           <SwiperSlide>
-            <img src={collection1} className="w-full" alt="" />
+            <img src={collectionPerson1} className="w-full" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={collection2} className="w-full" alt="" />
+            <img src={collectionPerson2} className="w-full" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={collection3} className="w-full" alt="" />
+            <img src={collectionPerson3} className="w-full" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={collectionPerson4} className="w-full" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={collectionPerson5} className="w-full" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={collectionPerson6} className="w-full" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={collectionPerson7} className="w-full" alt="" />
           </SwiperSlide>
         </Swiper>
       </Fade>
