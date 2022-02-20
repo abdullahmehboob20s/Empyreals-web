@@ -63,13 +63,25 @@ function JoinCommunity() {
               </p>
 
               <div className={styles.socialLinks}>
-                <a href="/" target="_blank">
+                <a
+                  href="https://www.instagram.com/empyrealsnft/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiFillInstagram size={isBellow760px ? 50 : 80} />
                 </a>
-                <a href="/" target="_blank">
+                <a
+                  href="https://discord.gg/myKgHJ84QJ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaDiscord size={isBellow760px ? 50 : 80} />
                 </a>
-                <a href="/" target="_blank">
+                <a
+                  href="https://twitter.com/EmpyrealsNFT"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BsTwitter size={isBellow760px ? 42 : 72} />
                 </a>
               </div>

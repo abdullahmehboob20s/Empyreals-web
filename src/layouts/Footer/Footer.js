@@ -64,13 +64,25 @@ function Footer() {
             delay={200}
             duration={500}
           >
-            <a href="/" target="_blank">
+            <a
+              href="https://www.instagram.com/empyrealsnft/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <AiFillInstagram size={isBellow500px ? 40 : 60} />
             </a>
-            <a href="/" target="_blank">
+            <a
+              href="https://discord.gg/myKgHJ84QJ"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaDiscord size={isBellow500px ? 40 : 60} />
             </a>
-            <a href="/" target="_blank">
+            <a
+              href="https://twitter.com/EmpyrealsNFT"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsTwitter size={isBellow500px ? 32 : 52} />
             </a>
           </Fade>

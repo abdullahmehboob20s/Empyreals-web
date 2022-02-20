@@ -13,14 +13,14 @@ function TeamMemberCard({ img, name, designation, links }) {
         <h1
           className={`${
             isBellow500px ? "fs-24px" : "fs-30px"
-          } weight-5 text-center`}
+          } weight-5 text-center text-yellow-gradient`}
         >
           {name}
         </h1>
         <h2
           className={`${
             isBellow500px ? "fs-16px" : "fs-22px"
-          } weight-4 text-center`}
+          } weight-4 text-center `}
         >
           {designation}
         </h2>

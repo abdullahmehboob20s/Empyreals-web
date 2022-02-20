@@ -58,22 +58,22 @@ function Team() {
             designation="Discord Moderator"
           /> */}
           <TeamMemberCard
-            img={teamMember7}
+            img={teamMember6}
             name="Adonis"
             designation="Moderator"
           />
           <TeamMemberCard
-            img={teamMember6}
+            img={teamMember7}
             name="Insane"
             designation="Collab Manager"
           />
           <TeamMemberCard
-            img={teamMember6}
+            img={teamMember8}
             name="Matsev"
             designation="Blockchain dev"
           />
           <TeamMemberCard
-            img={teamMember6}
+            img={teamMember2}
             name="Raja ziafat"
             designation="Website dev"
           />

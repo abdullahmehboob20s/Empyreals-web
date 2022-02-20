@@ -6,9 +6,24 @@ import Roadmap from "layouts/HomePage/Roadmap/Roadmap";
 import Story from "layouts/HomePage/Story/Story";
 import Team from "layouts/HomePage/Team/Team";
 import Navbar from "layouts/Navbar/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
+import video from "assets/images/video.mp4";
+import styles from "./HomePage.module.css";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 
 function HomePage() {
+  const ref = React.useRef();
+  const vidRef = React.useRef();
+  const onScreen = useIntersectionObserver(ref);
+
+  useEffect(() => {
+    if (onScreen) {
+      vidRef.current.play();
+    } else {
+      vidRef.current.pause();
+    }
+  }, [onScreen]);
+
   return (
     <div>
       <Navbar />
@@ -21,6 +36,15 @@ function HomePage() {
       </div>
       <div className="mb-100px">
         <Story />
+      </div>
+      <div className="mb-100px">
+        <div className="container-wrapper" ref={ref}>
+          <div className={styles.videoWrapper}>
+            <video ref={vidRef} controls={true}>
+              <source src={video} type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
       <div className="mb-100px">
         <Roadmap />

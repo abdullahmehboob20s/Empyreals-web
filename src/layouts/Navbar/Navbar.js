@@ -75,7 +75,7 @@ function Navbar() {
                 to="/mint"
                 className={`${
                   styles.connectBtn
-                } yellow-btn white uppercase weight-7 ${
+                } yellow-btn white uppercase weight-7 text-center ${
                   isBellow1000px
                     ? isBellow700px
                       ? "fs-10px"
@@ -83,7 +83,8 @@ function Navbar() {
                     : "fs-16px"
                 } pointer`}
               >
-                {isBellow700px ? <FaBabyCarriage size={20} /> : "Mint Now"}
+                Mint Now
+                {/* {isBellow700px ? <FaBabyCarriage size={20} /> : "Mint Now"} */}
               </Link>
             </Fade>
           </div>
