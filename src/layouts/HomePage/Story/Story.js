@@ -56,15 +56,15 @@ function Story() {
                 } `}
               >
                 {" "}
-                Nestled deep in the Metaverse was the world <br /> <br /> of
-                Empyros ‘The Highest Heaven’ — a high-tech planet whose advanced
+                Nestled deep in the Metaverse was the world <br /> of Empyros
+                ‘The Highest Heaven’ — a high-tech planet whose advanced
                 technological and scientific achievements were known far and
                 wide in the Metaverse. A part of Empyros’ success as a society
                 was its small population of 6,666 Empyreals which allowed them
                 to maximize the resources allocated to each citizen. It was a
                 harmonious and prosperous society that was self-sufficient and
                 untouched by evil and immoral practices. Until one day something
-                appeared above the Spire of Empyros - A Wormhole. <br />
+                appeared above the Spire of Empyros - A Wormhole.
                 <br /> Join our discord to know more
               </p>
 

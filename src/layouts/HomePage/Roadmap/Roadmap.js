@@ -143,7 +143,7 @@ function Roadmap() {
           <div className={styles.right}>
             <div className={styles.content}>
               <img src={GIF} className="w-full" alt="" />
-              <img src={GIF} className="w-full" alt="" />
+              <img src={roadmap_img_2} className="w-full" alt="" />
             </div>
           </div>
         </div>

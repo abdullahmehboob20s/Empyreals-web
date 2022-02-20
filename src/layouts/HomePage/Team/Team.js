@@ -69,13 +69,13 @@ function Team() {
           />
           <TeamMemberCard
             img={teamMember6}
-            name="Blockchain dev"
-            designation="Matsev"
+            name="Matsev"
+            designation="Blockchain dev"
           />
           <TeamMemberCard
             img={teamMember6}
-            name="Website dev"
-            designation="Raja ziafat"
+            name="Raja ziafat"
+            designation="Website dev"
           />
         </div>
       </div>

@@ -10,14 +10,12 @@
 
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
   overflow-y: auto;
   background-color: #04021c;
 }
 
 :root {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 
   --fs-4px: 4px;
   --fs-6px: 6px;
@@ -710,6 +708,7 @@ li {
   :root {
     --fs-36px: 28px;
     --fs-32px: 22px;
+    --fs-50px: 40px;
   }
 }
 @media (max-width: 760px) {
@@ -728,5 +727,8 @@ li {
   :root {
     --fs-36px: 20px;
     --fs-32px: 18px;
+    --fs-50px: 30px;
+    --fs-40px: 24px;
+    --fs-20px: 16px;
   }
 }

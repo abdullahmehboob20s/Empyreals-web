@@ -37,21 +37,24 @@ function Footer() {
           </Link>
         </Fade>
 
-        <Fade
-          direction="down"
-          triggerOnce={true}
-          cascade={true}
-          delay={200}
-          duration={500}
-        >
-          <p
-            className={`${
-              isBellow500px ? "fs-20px" : "fs-24px"
-            }  weight-4 text-center white mb-30px`}
+        <div className="text-center mb-30px">
+          <Fade
+            direction="down"
+            triggerOnce={true}
+            cascade={true}
+            delay={200}
+            duration={500}
           >
-            Terms & conditions
-          </p>
-        </Fade>
+            <Link
+              to="/terms-and-conditions"
+              className={`${
+                isBellow500px ? "fs-20px" : "fs-24px"
+              }  weight-4  white `}
+            >
+              Terms & conditions
+            </Link>
+          </Fade>
+        </div>
 
         <div className={`${styles.socialLinks} mb-30px`}>
           <Fade

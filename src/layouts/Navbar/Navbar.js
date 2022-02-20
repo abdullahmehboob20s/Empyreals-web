@@ -50,18 +50,18 @@ function Navbar() {
               cascade={true}
             >
               <a
-                href="https://discord.gg/myKgHJ84QJ"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <BsDiscord size={isBellow1000px ? 24 : 40} />
-              </a>
-              <a
                 href="https://twitter.com/EmpyrealsNFT"
                 rel="noreferrer"
                 target="_blank"
               >
                 <BsTwitter size={isBellow1000px ? 24 : 41} />
+              </a>
+              <a
+                href="https://discord.gg/myKgHJ84QJ"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BsDiscord size={isBellow1000px ? 24 : 40} />
               </a>
               <a
                 href="https://www.instagram.com/empyrealsnft/"
@@ -71,7 +71,8 @@ function Navbar() {
                 <AiFillInstagram size={isBellow1000px ? 24 : 43} />
               </a>
 
-              <button
+              <Link
+                to="/mint"
                 className={`${
                   styles.connectBtn
                 } yellow-btn white uppercase weight-7 ${
@@ -83,7 +84,7 @@ function Navbar() {
                 } pointer`}
               >
                 {isBellow700px ? <FaBabyCarriage size={20} /> : "Mint Now"}
-              </button>
+              </Link>
             </Fade>
           </div>
         </div>

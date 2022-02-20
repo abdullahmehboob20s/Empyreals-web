@@ -2,7 +2,7 @@ import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
+import SwiperCore, { Navigation, EffectCoverflow, Autoplay } from "swiper";
 import useMediaQuery from "hooks/useMediaQuery ";
 import Title from "components/Title/Title";
 import { Fade } from "react-awesome-reveal";
@@ -14,7 +14,7 @@ import collectionPerson4 from "assets/images/collection/4.jpg";
 import collectionPerson5 from "assets/images/collection/5.jpg";
 import collectionPerson6 from "assets/images/collection/6.jpg";
 import collectionPerson7 from "assets/images/collection/7.jpg";
-SwiperCore.use([Navigation, EffectCoverflow]);
+SwiperCore.use([Navigation, EffectCoverflow, Autoplay]);
 
 function Collection() {
   let navigationPrevRef = React.useRef(null);
@@ -36,6 +36,10 @@ function Collection() {
           slidesPerView={3}
           spaceBetween={60}
           effect={"coverflow"}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
           centeredSlides={true}
           loop={true}
           coverflowEffect={{
