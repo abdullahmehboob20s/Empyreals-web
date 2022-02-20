@@ -106,7 +106,7 @@ function Roadmap() {
               points={[
                 {
                   point:
-                    "The EMPYREALS Project will be extended to Sandbox and/or Decentraland which will be our Spire of Empyros, the HQ and Club.",
+                    "The Empyreals Project will be extended to Decentraland which will be the 'Spire of Empyros' - our HQ and Club.",
                 },
                 {
                   point:
@@ -118,7 +118,7 @@ function Roadmap() {
                 },
                 {
                   point:
-                    "We are going to launch the $EPEX token with a limited supply which will be used as our in-game currency to provide utility and governance to our EMPYREALS token holders. 3 $EPEX Tokens will be rewarded per day for each NFT you stake regardless of its rarity, further will be addressed as we move forward.",
+                    "We are going to launch the $EPEX token with a limited supply which will be used as our in-game currency to provide utility and governance to our EMPYREALS token holders.",
                 },
                 {
                   point:

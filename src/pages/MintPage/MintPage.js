@@ -98,7 +98,7 @@ function MintPage() {
                 isBellow650px ? "fs-12px" : "fs-18px"
               } text-center  white weight-4`}
             >
-              4 NFT
+              5 NFT
             </p>
           </div>
 

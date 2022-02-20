@@ -12,8 +12,8 @@ import styles from "./HomePage.module.css";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
 
 function HomePage() {
-  const ref = React.useRef();
   const vidRef = React.useRef();
+  const ref = React.useRef();
   const onScreen = useIntersectionObserver(ref);
 
   useEffect(() => {

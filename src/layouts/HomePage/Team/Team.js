@@ -10,6 +10,8 @@ import teamMember5 from "assets/images/teamMember5.png";
 import teamMember6 from "assets/images/teamMember6.png";
 import teamMember7 from "assets/images/teamMember7.png";
 import teamMember8 from "assets/images/teamMember8.png";
+import teamMember9 from "assets/images/teamMember9.jpg";
+import teamMember10 from "assets/images/teamMember10.jpg";
 import { BsTwitter } from "react-icons/bs";
 import Title from "components/Title/Title";
 import { Fade } from "react-awesome-reveal";
@@ -33,14 +35,14 @@ function Team() {
           />
           <TeamMemberCard
             img={teamMember2}
-            name="Lockhart "
+            name="Alyra "
             designation="Artist"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember3}
-            name="Alyra        "
-            designation="Founder  "
+            name="Lockhart"
+            designation="Founder"
           />
           <TeamMemberCard
             img={teamMember4}
@@ -73,9 +75,14 @@ function Team() {
             designation="Blockchain dev"
           />
           <TeamMemberCard
-            img={teamMember2}
+            img={teamMember9}
             name="Raja ziafat"
             designation="Website dev"
+          />
+          <TeamMemberCard
+            img={teamMember10}
+            name="ES ALPHA"
+            designation="Discord Admin"
           />
         </div>
       </div>
