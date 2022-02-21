@@ -62,7 +62,7 @@ function JoinCommunity() {
                 </a>
               </p>
 
-              <div className={styles.socialLinks}>
+              {/* <div className={styles.socialLinks}>
                 <a
                   href="https://www.instagram.com/empyrealsnft/"
                   target="_blank"
@@ -84,7 +84,7 @@ function JoinCommunity() {
                 >
                   <BsTwitter size={isBellow760px ? 42 : 72} />
                 </a>
-              </div>
+              </div> */}
             </Reveal>
           </div>
           <div className={styles.right}>

@@ -36,13 +36,13 @@ function Team() {
           <TeamMemberCard
             img={teamMember2}
             name="Alyra "
-            designation="Artist"
+            designation="Founder"
             links={[{ icon: <BsTwitter size={30} />, link: "/" }]}
           />
           <TeamMemberCard
             img={teamMember3}
             name="Lockhart"
-            designation="Founder"
+            designation="Artist "
           />
           <TeamMemberCard
             img={teamMember4}
@@ -52,18 +52,18 @@ function Team() {
           <TeamMemberCard
             img={teamMember5}
             name="Kamlu     "
-            designation="SMM"
+            designation="Moderator"
           />
           {/* <TeamMemberCard
             img={teamMember6}
             name="Kenko"
             designation="Discord Moderator"
           /> */}
-          <TeamMemberCard
+          {/* <TeamMemberCard
             img={teamMember6}
             name="Adonis"
             designation="Moderator"
-          />
+          /> */}
           <TeamMemberCard
             img={teamMember7}
             name="Insane"

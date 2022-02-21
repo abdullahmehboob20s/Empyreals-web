@@ -10,7 +10,7 @@ function TermsAndConditionPage() {
         <h1 className="white fs-50px mb-40px">Terms & Conditions</h1>
         <div className="mb-70px">
           <p className="white opacity-0_6 fs-20px weight-4 mb-25px lh-1_5">
-            Last Updated: December 21, 2021
+            Last Updated: February 20, 2022
           </p>
           <p className="white opacity-0_6 fs-20px weight-4 mb-25px lh-1_5">
             This website is operated by Empyreals. Throughout the site, the term
